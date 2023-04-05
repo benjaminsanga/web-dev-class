@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorials</title>
+  <link rel="stylesheet" href="./css/tutorial.css">
+</head>
+<body>
+  <h1>Tutorial page</h1>
+
+  <div class="container" style="background-color: black;">
+
+  </div>
+
+  <div id="another-container"></div>
+  <p id="output"></p>
+  <input type="text" id="input">
+  <button id="submit-button">Submit</button>
+
+  <script>
+    const btn = document.getElementById('submit-button');
+    const input = document.getElementById('input')
+    const output = document.getElementById('output')
+
+    btn.addEventListener('click', () => {
+      let inputValue = input.value
+      output.innerHTML = inputValue
+    })
+  </script>
+</body>
+</html>

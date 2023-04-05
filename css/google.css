@@ -1,0 +1,68 @@
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.gb_Be {
+  opacity: 0.5;
+  width: 24px;
+  height: 24px;
+}
+
+.topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  list-style-type: none;
+}
+
+.topbar > li {
+  padding: 0 10px;
+}
+
+.google-logo-div {
+  width: 256px;
+  margin: 0 auto;
+}
+
+.google-logo {
+  width: 256px;
+}
+
+.search-div-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.search-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid gainsboro;
+  padding: 10px 15px;
+  border-radius: 45px;
+}
+
+.search-div:hover {
+  box-shadow: 1px 1px 5px gainsboro;
+}
+
+.search-div svg {
+  width: 24px;
+  height: 24px;
+}
+
+.search-div > svg:first-child {
+  opacity: 0.5;
+}
+
+.search-div input {
+  width: 73%;
+  padding: 7px 0;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
