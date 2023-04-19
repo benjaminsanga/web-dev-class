@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tutorials</title>
   <link rel="stylesheet" href="./css/tutorial.css">
+  <style>
+    #dropdown-items {
+      display: none;
+    }
+  </style>
 </head>
 <body>
   <h1>Tutorial page</h1>
@@ -19,7 +24,39 @@
   <input type="text" id="input">
   <button id="submit-button">Submit</button>
 
+  <div>
+    <div>
+      <a href="#" id="dropdown">Drop</a> 
+      <ul id="dropdown-items">
+        <li>Dropdown Item</li>
+      </ul>
+    </div>
+  </div>
+
   <script>
+    let toggler = false
+    document.getElementById('dropdown').addEventListener('click', (e) => {
+      e.preventDefault()
+      document.querySelector('#dropdown-items').style.display = toggler ? 'none' : 'block'
+      toggler = !toggler
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     const btn = document.getElementById('submit-button');
     const input = document.getElementById('input')
     const output = document.getElementById('output')
