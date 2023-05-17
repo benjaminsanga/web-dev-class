@@ -1,0 +1,29 @@
+body {
+  height: 100vh;
+}
+
+#form-div, body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  box-shadow: gray 2px 1px 5px;
+}
+
+#login-form {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#login-success, #content {
+  display: none;
+}
